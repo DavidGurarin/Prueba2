@@ -1,0 +1,184 @@
+@font-face {
+  src: url(Dancing+Script);
+}
+body{
+  background-color: #02010a;
+}
+#cabecera{
+  width: 100%;
+  background-color: #5b7989;
+  text-align: justify;
+  padding-top: 5px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  flex-flow: row wrap;
+}
+h1{
+  width: 50%;
+  text-shadow: 10px 10px #999;
+  font-family: "Dancing Script"
+}
+#cabecera .contenedor div{
+text-align: center;
+width: 33%;
+}
+#cabecera .contenedor{
+  text-align: right;
+  background-color: green;
+  display: flex;
+  width: 50%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-family: "Dancing Script"
+}
+#Imagen1{
+  background-color: #82c3a6;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+#Imagen1 img{
+  box-shadow: 10px 10px  #d5c75f;
+}
+#imagensecundaria{
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  background-color: #d5c75f;
+  border: 1px solid;
+  font-family: "Dancing Script";
+}
+#imagensecundaria div{
+  width: 50%;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: 2em;
+}
+#imagensecundaria .Foto_2 img{
+  width: 80%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: auto;
+  display: block;
+  transition: transform 3s;
+  box-shadow: 10px 10px #82c3a6;
+  border: 2px solid;
+}
+#imagensecundaria .Foto_2 img:hover{
+    transform: rotate(10deg);
+  }
+#imagensecundaria .Foto_3 img{
+  width: 80%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: auto;
+  display: block;
+  box-shadow: 10px 10px #82c3a6;
+  border: 2px solid;
+  transition: transform 3s;
+}
+#imagensecundaria .Foto_3 img:hover{
+    transform: translate(20px,-5px);
+  }
+footer{
+  background-color: #02010a;
+}
+#Piedepagina{
+  background-color: #C6d5c5;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+}
+#Piedepagina div{
+  text-align: justify;
+  width: 25%;
+  padding: 10px;
+}
+.ejercicio{
+  display: flex;
+  flex-flow: row wrap;
+}
+@media (max-width: 720px){
+  h1{
+    width: 100%;
+    text-align: center;
+  }
+  #cabecera .contenedor {
+    width: 100%;
+  }
+  #imagensecundaria{
+    flex-direction: column;
+  }
+  #imagensecundaria div{
+    width: 80%;
+    display: block;
+    margin: auto;
+  }
+  img{
+    width: 80%;
+  }
+  h2{
+    font-size: 1em;
+  }
+  #Piedepagina{
+    flex-direction: column;
+  }
+  #Fotos{
+    flex-direction: column;
+  }
+  #Fotos div{
+    display: block;
+    margin: auto;
+  }
+  #Fotos .ejercicio1{
+    width: 80%;
+  }
+  #Fotos .ejercicio2{
+    width: 80%;
+  }
+  #Fotos .ejercicio3{
+    width: 80%;
+  }
+  #Fotos .ejercicio4{
+    width: 80%;
+  }
+  #Fotos .ejercicio5{
+    width: 80%;
+  }
+  #Fotos .ejercicio6{
+    width: 80%;
+  }
+}
+section[id*="Fotos"]{
+ display: flex;
+ flex-flow: row wrap;
+ width: 100%;
+}
+#Fotos div{
+ width: 33%;
+}
+#Fotos div img{
+ width: 75%;
+ text-align: center;
+ padding: 10px;
+}
+.ejercicio1{
+  filter: blur(10px);
+}
+.ejercicio2{
+  filter: grayscale(100%);
+}
+.ejercicio4{
+  filter: grayscale(80%);
+}
+.ejercicio6{
+  filter: grayscale(60%);
+}
+.ejercicio3{
+  filter: sepia(90%);
+}
+footer div img{
+  width: 20%;
+}
